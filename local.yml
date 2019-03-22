@@ -5,7 +5,7 @@
   tasks:
     - name: App install
       copy: 
-        src: test_app
+        src:  ansible/test_app.sh
         dest: /tmp/
         owner: root
         group: root

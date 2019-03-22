@@ -6,5 +6,5 @@
     - name: Check Dist Version
       shell: cat /etc/os-release
       register: response
-    - debug: msg="{{ response.stdout }}"  
+ 
     

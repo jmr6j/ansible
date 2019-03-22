@@ -1,7 +1,7 @@
 ---
 - name: check Linux distribution
   hosts: all
-  gather_facts: False
+  gather_facts: True
   tasks:
     - name: Check Dist Version
       shell: cat /etc/os-release

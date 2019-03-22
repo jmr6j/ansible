@@ -1,10 +1,13 @@
 ---
-- name: check Linux distribution
+- name: Run Test App
   hosts: all
   gather_facts: True
   tasks:
-    - name: Check Dist Version
-      shell: cat /etc/os-release
-      register: response
+    - name: App install
+      copy: 
+        src: test_app
+        dest: /tmp/
+        owner: root
+        group: root
  
     

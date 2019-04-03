@@ -3,11 +3,8 @@
   hosts: all
   gather_facts: True
   tasks:
-    - name: App install
-      copy: 
-        src:  ansible/test_app.sh
-        dest: /tmp/
-        owner: root
-        group: root
+    - name: Gather FACTS: IP and Hostname
+      tasks:
+        - debug: var=hostvars[inventory_hostname
  
     
